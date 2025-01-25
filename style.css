@@ -1,0 +1,50 @@
+/* 3. Style the body tag */
+body {
+    font-family: Arial, sans-serif; /* Chọn font mặc định */
+    font-size: 16px; /* Điều chỉnh kích thước chữ */
+}
+
+/* 4. Style the header tag */
+header {
+    background-color: #4CAF50; /* Đổi màu nền */
+}
+
+/* 5. Style the nav tag */
+nav {
+    background-color: #333; /* Đổi màu nền */
+    color: white; /* Màu chữ */
+}
+
+/* 6. Style the main tag */
+main {
+    background-color: #f4f4f4; /* Đổi màu nền */
+    font-size: 18px; /* Kích thước chữ lớn hơn */
+    padding: 20px; /* Thêm khoảng cách */
+}
+
+/* 7. Style the footer tag */
+footer {
+    background-color: #222; /* Đổi màu nền */
+    color: white; /* Màu chữ */
+    text-align: center; /* Căn giữa */
+    padding: 10px; /* Thêm khoảng cách */
+}
+
+/* 8. Style the li tag */
+li {
+    display: inline-block; /* Hiển thị các mục trên 1 dòng */
+    width: 150px; /* Đặt chiều rộng cho các mục */
+}
+
+/* 9. Style the h1 tag */
+h1 {
+    text-align: center; /* Căn giữa tiêu đề */
+    font-family: 'Georgia', serif; /* Font chữ thay thế */
+    color: #444; /* Đổi màu chữ */
+}
+
+/* 10. Style the p tag */
+p {
+    line-height: 1.6; /* Điều chỉnh khoảng cách dòng */
+    color: #666; /* Đổi màu chữ */
+}
