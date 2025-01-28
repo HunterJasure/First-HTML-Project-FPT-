@@ -1,0 +1,48 @@
+/* Skip to Main Content link */
+#skip {
+  position: absolute;
+  top: -40px;
+  left: 10px;
+  background: #000;
+  color: #fff;
+  padding: 10px;
+  z-index: 100;
+}
+#skip:focus {
+  top: 10px;
+}
+
+/* Remove existing li styling */
+/* li { ... } */
+
+/* Style nav */
+nav {
+  display: inline-block;
+  width: 80%;
+}
+
+/* Style image inside nav */
+nav img {
+  width: 10%;
+}
+
+/* Style grid class */
+.grid {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
+}
+
+/* Style images inside grid only */
+.grid img {
+  width: 100%;
+}
+
+/* Style flex class */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
