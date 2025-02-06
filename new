@@ -3,22 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Three Page Site</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Image Hover</title>
+    <style>
+        #image {
+            width: 300px;
+            height: 200px;
+            background-color: lightgray;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            text-align: center;
+            background-size: cover;
+        }
+        .preview {
+            width: 100px;
+            height: 100px;
+            margin: 5px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-    <a href="#main" class="skip-link">Skip to Main Content</a>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-    <main id="main">
-        <h1>Welcome to My Website</h1>
-        <p>This is the homepage.</p>
-        <img src="image1.jpg" alt="A beautiful scenery">
-    </main>
+    <div id="image">Hover over an image below to display here.</div>
+    <br>
+    <img class="preview" src="image1.jpg" alt="Image 1" onmouseover="upDate(this)" onmouseout="undo()">
+    <img class="preview" src="image2.jpg" alt="Image 2" onmouseover="upDate(this)" onmouseout="undo()">
+    <img class="preview" src="image3.jpg" alt="Image 3" onmouseover="upDate(this)" onmouseout="undo()">
+
+    <script>
+        function upDate(previewPic) {
+            console.log("Event triggered");
+            console.log("Alt text: ", previewPic.alt);
+            console.log("Image source: ", previewPic.src);
+
+            let imageDiv = document.getElementById("image");
+            imageDiv.innerHTML = previewPic.alt;
+            imageDiv.style.backgroundImage = `url('${previewPic.src}')`;
+        }
+
+        function undo() {
+            let imageDiv = document.getElementById("image");
+            imageDiv.innerHTML = "Hover over an image below to display here.";
+            imageDiv.style.backgroundImage = "";
+        }
+    </script>
 </body>
 </html>
